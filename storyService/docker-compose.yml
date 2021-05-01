@@ -1,0 +1,9 @@
+version: '3'
+services:
+  api:
+    build: .
+    container_name: microservice_app_story_service
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./:/app
